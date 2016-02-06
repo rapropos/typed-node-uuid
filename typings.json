@@ -1,5 +1,4 @@
 {
   "name": "uuid",
-  "main": "node.d.ts",
-  "browser": "browser.d.ts"
+  "main": "node.d.ts"
 }

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "typings install",
     "build": "tsc -p . && typings bundle -o out/",
     "test": "tsc -p test && mocha",
     "build+test": "npm run build && npm test"

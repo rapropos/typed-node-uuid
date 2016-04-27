@@ -1,0 +1,16 @@
+{
+  "name": "typed-node-uuid",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "tsc -p test"
+  },
+  "author": "Louay Alakkad <louay@alakkad.me>",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  }
+}

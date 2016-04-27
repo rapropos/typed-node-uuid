@@ -1,0 +1,7 @@
+{
+  "name": "node-uuid",
+  "main": "index.d.ts",
+  "ambientDependencies": {
+    "node": "registry:dt/node#4.0.0+20160423143914"
+  }
+}

@@ -1,6 +1,3 @@
-interface Buffer {
-}
-
 export interface V1Options {
   /** Node id as Array of 6 bytes (per 4.1.6). Default: Randomly generated ID. */
   node?: number[];
@@ -22,7 +19,8 @@ export interface V1Options {
  * @param buffer Array or buffer where UUID bytes are to be written.
  * @param offset Starting index in buffer at which to begin writing.
  */
-export function v1(options?: V1Options, buffer?: Array<any>, offset?: number): string;
+export function v1(options?: V1Options, buffer?: void, offset?: number): string;
+export function v1(options?: V1Options, buffer?: number[], offset?: number): number[];
 export function v1(options?: V1Options, buffer?: Buffer, offset?: number): Buffer;
 
 export interface V4Options {
@@ -42,7 +40,9 @@ export interface V4Options {
  * @param buffer Array or buffer where UUID bytes are to be written.
  * @param offset Starting index in buffer at which to begin writing.
  */
-export function v4(options?: V4Options, buffer?: Array<any> | Buffer, offset?: number): string;
+export function v4(options?: V4Options, buffer?: void, offset?: number): string;
+export function v4(options?: V4Options, buffer?: number[], offset?: number): number[];
+export function v4(options?: V4Options, buffer?: Buffer, offset?: number): Buffer;
 
 /**
  * Parse UUIDs
@@ -50,7 +50,9 @@ export function v4(options?: V4Options, buffer?: Array<any> | Buffer, offset?: n
  * @param buffer Array or buffer where UUID bytes are to be written. Default: A new Array or Buffer is used
  * @param offset Starting index in buffer at which to begin writing. Default: 0
  */
-export function parse(id: string, buffer?: Array<any> | Buffer, offset?: number): Buffer;
+export function parse(id: string, buffer?: number[], offset?: number): number[];
+export function parse(id: string, buffer?: Buffer, offset?: number): Buffer;
+
 /**
  * Unparse UUIDs
  * @param buffer Array or buffer where UUID bytes are to be written. Default: A new Array or Buffer is used

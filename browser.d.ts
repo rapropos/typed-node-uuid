@@ -16,12 +16,11 @@ export interface V1Options {
  * Generate and return a RFC4122 v1 (timestamp-based) UUID.
  * Returns buffer, if specified, otherwise the string form of the UUID.
  * @param options Optional uuid state to apply.
- * @param buffer Array or buffer where UUID bytes are to be written.
+ * @param buffer Array where UUID bytes are to be written.
  * @param offset Starting index in buffer at which to begin writing.
  */
 export function v1(options?: V1Options, buffer?: void, offset?: number): string;
 export function v1(options?: V1Options, buffer?: number[], offset?: number): number[];
-export function v1(options?: V1Options, buffer?: Buffer, offset?: number): Buffer;
 
 export interface V4Options {
   /** Array of 16 numbers (0 - 255) to use in place of randomly generated values */
@@ -37,25 +36,23 @@ export interface V4Options {
  * Generate and return a RFC4122 v4 UUID.
  * Returns buffer, if specified, otherwise the string form of the UUID.
  * @param options Optional uuid state to apply.
- * @param buffer Array or buffer where UUID bytes are to be written.
+ * @param buffer Array where UUID bytes are to be written.
  * @param offset Starting index in buffer at which to begin writing.
  */
 export function v4(options?: V4Options, buffer?: void, offset?: number): string;
 export function v4(options?: V4Options, buffer?: number[], offset?: number): number[];
-export function v4(options?: V4Options, buffer?: Buffer, offset?: number): Buffer;
 
 /**
  * Parse UUIDs
  * @param id UUID(-like) string
- * @param buffer Array or buffer where UUID bytes are to be written. Default: A new Array or Buffer is used
+ * @param buffer Array where UUID bytes are to be written. Default: A new Array is used
  * @param offset Starting index in buffer at which to begin writing. Default: 0
  */
 export function parse(id: string, buffer?: number[], offset?: number): number[];
-export function parse(id: string, buffer?: Buffer, offset?: number): Buffer;
 
 /**
  * Unparse UUIDs
- * @param buffer Array or buffer where UUID bytes are to be written. Default: A new Array or Buffer is used
+ * @param buffer Array where UUID bytes are to be written. Default: A new Array is used
  * @param offset Starting index in buffer at which to begin writing. Default: 0
  */
-export function unparse(buffer?: Array<any> | Buffer, offset?: number): string;
+export function unparse(buffer?: number[], offset?: number): string;

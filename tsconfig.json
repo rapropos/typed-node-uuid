@@ -5,6 +5,7 @@
   },
   "files": [
     "typings/main.d.ts",
-    "index.d.ts"
+    "main.d.ts",
+    "browser.d.ts"
   ]
 }

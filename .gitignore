@@ -8,3 +8,5 @@ typings/
 .DS_Store
 
 out/
+
+.idea

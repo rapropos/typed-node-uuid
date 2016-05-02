@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs"
+  },
+  "files": [
+    "typings/main.d.ts",
+    "main.d.ts",
+    "browser.d.ts"
+  ]
+}

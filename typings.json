@@ -1,4 +1,14 @@
 {
-  "name": "uuid",
-  "main": "node.d.ts"
+  "name": "node-uuid",
+  "main": "main.d.ts",
+  "browser": "browser.d.ts",
+  "ambientDependencies": {
+    "node": "registry:dt/node#4.0.0+20160423143914"
+  },
+  "devDependencies": {
+    "chai": "registry:npm/chai#3.5.0+20160415060238"
+  },
+  "ambientDevDependencies": {
+    "mocha": "registry:dt/mocha#2.2.5+20160317120654"
+  }
 }

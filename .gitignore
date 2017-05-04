@@ -7,6 +7,6 @@ typings/
 
 .DS_Store
 
-out/
+out.d.ts
 
 .idea

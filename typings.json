@@ -2,13 +2,13 @@
   "name": "node-uuid",
   "main": "main.d.ts",
   "browser": "browser.d.ts",
-  "ambientDependencies": {
-    "node": "registry:dt/node#4.0.0+20160423143914"
+  "globalDependencies": {
+    "node": "registry:env/node#6.0.0+20170213133316"
   },
   "devDependencies": {
     "chai": "registry:npm/chai#3.5.0+20160415060238"
   },
-  "ambientDevDependencies": {
+  "globalDevDependencies": {
     "mocha": "registry:dt/mocha#2.2.5+20160317120654"
   }
 }

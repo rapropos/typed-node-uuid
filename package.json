@@ -13,7 +13,7 @@
   "description": "",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.3.0",
+    "mocha": "^3.4.2",
     "source-map-support": "^0.4.0",
     "typescript": "^2.3.2",
     "typings": "^2.1.1"
